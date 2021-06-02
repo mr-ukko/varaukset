@@ -5,7 +5,7 @@
             flex-direction: column;
 			
 			}
-			#box1 {
+			box1 {
             padding: 10px;
             height: 30px;
             line-height: 30px;
