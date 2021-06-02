@@ -5,10 +5,16 @@
             flex-direction: column;
 			
 			}
-			box1 {
+			#box1 {
             padding: 10px;
             height: 30px;
             line-height: 30px;
             border: solid 1px green;
 			cursor: pointer;
+        }
+		body,
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
         }
