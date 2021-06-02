@@ -8,5 +8,6 @@
 		<div id="box1">test</div>
 		</div> 
 		<input type="submit">
+		</form>
 	</head>
 </html>
