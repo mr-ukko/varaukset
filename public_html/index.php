@@ -3,7 +3,7 @@
 	<head>
 		</h1>hello world</h1>
 		<form action="welcome.php" method="post">
-		<div></div> 
+		<div class="box-wrapper"></div> 
 		<input type="submit">
 	</head>
 </html>
