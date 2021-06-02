@@ -1,14 +1,14 @@
 
 <?php
 session_start();
-$_SESSION["favcolor"] = "green";
+$_SESSION["favcolor"] = "red";
 ?>
 <html>
 	<link rel="stylesheet" href="styleshit.css">
 	<head>
 		</h1>hello world</h1>
 		<div class="box-wrapper">
-		<div id="box1" onclick="<?php $_SESSION["favcolor"] = "gree"; ?> "> test</div>
+		<div id="box1" onclick="<?php $_SESSION["favcolor"] = "green"; ?> "  style="background-color: <?php $_SESSION["favcolor"] ?>;" > test</div>
 		</div> 
 		< <form action="vara.php" method="get">
         <input type="submit" value="Run me now!">
