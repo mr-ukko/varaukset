@@ -12,9 +12,3 @@
             border: solid 1px green;
 			cursor: pointer;
         }
-		body,
-        html {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
