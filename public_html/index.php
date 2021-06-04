@@ -1,7 +1,7 @@
 <html>
 	<link rel="stylesheet" href="styleshit.css">
 	<head>
-		</h1>hello world</h1>
+		<h1>hello world</h1>
 		<div class="box-wrapper">
 		<div id="box1" > <!--<?php $conn = mysqli_connect('localhost','root','root','varaukset'); $query="SELECT varaus FROM nyt WHERE nimi='tettapaikka1'"; $result = mysqli_query($conn,$query); if ($result==1) {echo 'style="background-color: coral;"';} if ($result==2) {echo 'background-color: red;"'} ?> --> test</div>
 		</div> 
