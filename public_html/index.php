@@ -12,14 +12,16 @@ $row = mysqli_fetch_array($result);
 		<div id="box1" style="<?php if ($row["varaus"] == 1) {echo 'background-color: blue;';} if ($row["varaus"] == 2) {echo 'background-color: red;';} ?>"> test</div>
 		</div> 
 		<form action="vara.php" method="get">
-        <input type="submit" value="Run me now!"></input>
-    </form>
-	<?php 
+		<select id="cars" name="cars">
+		<?php 
 	$query = "SELECT * FROM `nyt`";
 	$result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_array($result)) {
         echo "<option".$row["nimi"]."</option>";}
 	 <option value="volvo">Volvo</option>
 	?>
+	<select>
+        <input type="submit" value="Run me now!"></input>
+    </form>
 	</head>
 </html>
