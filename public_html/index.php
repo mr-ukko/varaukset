@@ -17,7 +17,7 @@ $row = mysqli_fetch_array($result);
 	$query = "SELECT * FROM `nyt`";
 	$result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_array($result)) {
-        echo "<option".$row["nimi"]."</option>";}
+        echo "<option>".$row["nimi"]."</option>";}
 	 <option value="volvo">Volvo</option>
 	?>
 	<select>
