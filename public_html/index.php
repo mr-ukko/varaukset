@@ -9,7 +9,7 @@ $row = mysqli_fetch_array($result);
 	<head>
 		<h1>hello world</h1>
 		<div class="box-wrapper">
-		<div id="box1" style="<?php if ($row["varaus"] == 1) {echo 'background-color: blue;';} if ($row["varaus"] == 2) {echo 'background-color: red;';} ?>"> test</div>
+		<div <?php echo "id='box1'"?> style="<?php if ($row["varaus"] == 1) {echo 'background-color: blue;';} if ($row["varaus"] == 2) {echo 'background-color: red;';} ?>"> test</div>
 		</div> 
 		<form action="vara.php" method="get">
 		<select id="cars" name="cars">
