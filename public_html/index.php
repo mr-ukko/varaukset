@@ -15,7 +15,7 @@ $row = mysqli_fetch_array($result);
         <input type="submit" value="Run me now!"></input>
     </form>
 	<?php 
-	$query=SELECT * FROM `nyt` ;
+	$query = "SELECT * FROM `nyt`";
 	$result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_array($result)) {
         echo "<option value='".$row["nimi"].">".$row["nimi"].>"</option>";}
