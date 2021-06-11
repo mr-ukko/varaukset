@@ -24,7 +24,7 @@ $row = mysqli_fetch_array($result);
 	?>
 	<?php 
 	//korvaa grid item pieni teltta tällä
-	$query = "SELECT * FROM `telttapaikatpieni`";
+	$query = "SELECT * FROM `telttapaikatpieni` ORDER BY nimi ASC";
 	$result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_array($result)) {
 		if ($row["varaus"] == 1) 
@@ -37,7 +37,7 @@ $row = mysqli_fetch_array($result);
 	?>
 	<?php 
 	//korvaa grid item aitat tällä
-	$query = "SELECT * FROM `telttapaikatpieni`";
+	$query = "SELECT * FROM `aitta` ORDER BY nimi ASC";
 	$result = mysqli_query($conn,$query);
 	$rowcount = 0;
 
@@ -53,6 +53,21 @@ $row = mysqli_fetch_array($result);
         echo "<div class='grid-item' style='".$mina."' ><h2>".$row."</h2></div>";
 		$rowcount++
 		}
+	?>
+	<?php 
+	//korvaa grid item iso teltta tällä
+	$query = "SELECT * FROM `telttapaikatpieni` ORDER BY nimi ASC";
+	$result = mysqli_query($conn,$query);
+	$rowcount = 0;
+        while ($row = mysqli_fetch_array($result)) {
+		if ($rowcount==2) {echo "<div class='grid-container4'>"}
+		if ($row["varaus"] == 1) 
+		{$mina = "background-color: green;";} 
+		if ($row["varaus"] == 2) 
+		{$mina = "background-color: yellow;";}
+		if ($row["varaus"] == 3) 
+		{$mina = "background-color: red;";}
+        echo "<div class='grid-item' style='".$mina."' ><h2>".$row."</h2></div>";}
 	?>
 	</head>
 </html>
