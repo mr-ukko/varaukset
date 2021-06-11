@@ -67,7 +67,7 @@ $row = mysqli_fetch_array($result);
 		{$mina = "background-color: yellow;";}
 		if ($row["varaus"] == 3) 
 		{$mina = "background-color: red;";}
-        echo "<div class='grid-item' style='".$mina."' ><h2>".$row."</h2></div>";}
+        echo "<div class='grid-item' style='".$mina."' ><h2 id = 'custombox'>".$row."</h2></div>";}
 	?>
 	</head>
 </html>
