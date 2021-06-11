@@ -13,14 +13,46 @@ $row = mysqli_fetch_array($result);
 		</div> 
 		<form action="vara.php" method="get">
 		<select id="cars" name="cars">
-		<?php 
+		
+		<?php
+		//nämä tekee sen alas veto valikon
 	$query = "SELECT * FROM `nyt`";
 	$result = mysqli_query($conn,$query);
         while ($row = mysqli_fetch_array($result)) {
-        echo "<option>".$row["nimi"]."</option>";}
+        echo "<option value='".$row["nimi"]."' >".$row["nimi"]."</option>";}
+		echo "<select><input type='submit' value='Run me now!'></input></form>"
 	?>
-	<select>
-        <input type="submit" value="Run me now!"></input>
-    </form>
+	<?php 
+	//korvaa grid item pieni teltta tällä
+	$query = "SELECT * FROM `telttapaikatpieni`";
+	$result = mysqli_query($conn,$query);
+        while ($row = mysqli_fetch_array($result)) {
+		if ($row["varaus"] == 1) 
+		{$mina = "background-color: green;";} 
+		if ($row["varaus"] == 2) 
+		{$mina = "background-color: yellow;";}
+		if ($row["varaus"] == 3) 
+		{$mina = "background-color: red;";}
+        echo "<div class='grid-item' style='".$mina."' ><h2>".$row."</h2></div>";}
+	?>
+	<?php 
+	//korvaa grid item aitat tällä
+	$query = "SELECT * FROM `telttapaikatpieni`";
+	$result = mysqli_query($conn,$query);
+	$rowcount = 0;
+
+        while ($row = mysqli_fetch_array($result)) {
+		if ($rowcount==2) {echo "<div class='grid-container'>"}
+		if ($rowcount==12) {echo "<div class='grid-container2'>"}
+		if ($row["varaus"] == 1) 
+		{$mina = "background-color: green;";} 
+		if ($row["varaus"] == 2) 
+		{$mina = "background-color: yellow;";}
+		if ($row["varaus"] == 3) 
+		{$mina = "background-color: red;";}
+        echo "<div class='grid-item' style='".$mina."' ><h2>".$row."</h2></div>";
+		$rowcount++
+		}
+	?>
 	</head>
 </html>
