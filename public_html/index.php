@@ -42,8 +42,8 @@ $row = mysqli_fetch_array($result);
 	$rowcount = 0;
 
         while ($row = mysqli_fetch_array($result)) {
-		if ($rowcount==2) {echo "<div class='grid-container'>"}
-		if ($rowcount==12) {echo "<div class='grid-container2'>"}
+		if ($rowcount==2) {echo "</div><div class='grid-container'>"}
+		if ($rowcount==12) {echo "</div><div class='grid-container2'>"}
 		if ($row["varaus"] == 1) 
 		{$mina = "background-color: green;";} 
 		if ($row["varaus"] == 2) 
@@ -60,7 +60,7 @@ $row = mysqli_fetch_array($result);
 	$result = mysqli_query($conn,$query);
 	$rowcount = 0;
         while ($row = mysqli_fetch_array($result)) {
-		if ($rowcount==2) {echo "<div class='grid-container4'>"}
+		if ($rowcount==2) {echo "</div><div class='grid-container4'>"}
 		if ($row["varaus"] == 1) 
 		{$mina = "background-color: green;";} 
 		if ($row["varaus"] == 2) 
