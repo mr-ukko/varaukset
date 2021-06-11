@@ -1,0 +1,125 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 80px 80px;
+  padding: 10px;
+  width: 165px;
+  height: 290px;
+  grid-row-gap: 5px; grid-column-gap: 5px;
+  }
+  
+ .grid-container2 {
+  display: grid;
+  padding: 10px;
+  width: 165px;
+  height: 100px;
+  padding-top: 0px;
+  grid-row-gap: 5px; grid-column-gap: 5px;
+  }
+  
+ .grid-container3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 260px;
+  height: 390px;
+  grid-row-gap: 5px; grid-column-gap: 5px;
+  }
+  
+ .grid-container4 {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  grid-template-rows: 95px 95px 95px;
+  padding: 10px;
+  width: 190px;
+  height: 305px;
+  grid-row-gap: 10px; grid-column-gap: 10px;
+  }
+ .grid-container5 {
+  display: grid;
+  grid-template-columns: 90px;
+  grid-template-rows: 100px;
+  padding: 10px; padding-left: 110px;
+  width: 90px;
+  height: 90px;
+  grid-row-gap: 5px; grid-column-gap: 5px;
+  }
+   .grid-container6 {
+  display: grid;
+  grid-template-columns: 80px;
+  padding: 10px; padding-left: 95px; padding-bottom: 0px;
+  width: 80px;
+  height: 120px;
+  grid-row-gap: 5px; grid-column-gap: 5px;
+  }
+  
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  }
+ .grid{
+ padding-left: 650px;
+ padding-top: 60px;
+ position: absolute;
+ }
+ 
+ .grid2{
+ padding-left: 200px;
+ padding-top: 715px;
+ position: absolute;
+ }
+ 
+ .grid3{
+ padding-left: 530px;
+ padding-top: 690px;
+ position: absolute;
+ }
+  
+ .edgebox{
+ border: solid 2px black;
+ width: 900px;
+ height: 1200px;
+ margin-top: 150px;  margin-left: 2.5%; margin-bottom: 2.5%;
+ background-color: blue;
+ 
+ }
+ 
+ h2{
+ font-size: 22px;
+ margin: -10px;
+ }
+ 
+ p{
+  font-size: 19px;
+ padding: 0px;
+ margin: 0px;
+ text-align: 0px;
+ }
+ 
+ #custombox{
+ margin-top: 15px;
+ }
+ 
+ #title1{
+ padding-left: 70px;
+ }
+ 
+ #title2{
+  padding-left: 80px;
+ }
+ 
+ #title3{
+  padding-left: 50px;
+ }
+ 
+ #box{
+  border: solid 2px black;
+ }
+ 
+ 
+ 
+ 
+
+
