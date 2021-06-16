@@ -38,6 +38,16 @@ $row = mysqli_fetch_array($result);
   <input id="other" type="text" value size = 35></input></label><br>
   
 </form>
+<form action="vara.php" method="get">
+<?php
+		//nämä tekee sen alas veto valikon
+	$query = "SELECT * FROM `nyt`";
+	$result = mysqli_query($conn,$query);
+		echo "<select name='valinta'>";
+        while ($row = mysqli_fetch_array($result)) {
+        echo "<option value='".$row["nimi"]."'>".$row["nimi"]."</option>";}
+		echo "</select><input type='submit' value='Run me now!'></input></form>"
+	?>
 </div>
 
 <div class="edgebox">
@@ -118,16 +128,7 @@ $row = mysqli_fetch_array($result);
 		</div>
 	</div>
 </div>
-<form action="vara.php" method="get">
-<?php
-		//nämä tekee sen alas veto valikon
-	$query = "SELECT * FROM `nyt`";
-	$result = mysqli_query($conn,$query);
-		echo "<select name='valinta'>";
-        while ($row = mysqli_fetch_array($result)) {
-        echo "<option value='".$row["nimi"]."'>".$row["nimi"]."</option>";}
-		echo "</select><input type='submit' value='Run me now!'></input></form>"
-	?>
+
 	</div>
 </body>
   
