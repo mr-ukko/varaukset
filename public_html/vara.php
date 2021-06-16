@@ -42,6 +42,31 @@
 		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'aitta05';";}
 		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'aitta05';";}
 			break;
+		case "aitta6":
+		$query="SELECT varaus FROM aitta WHERE nimi='aitta6'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'aitta6';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'aitta6';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'aitta6';";}
+			break;
+		case "aitta7":
+		$query="SELECT varaus FROM aitta WHERE nimi='aitta7'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'aitta7';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'aitta7';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'aitta7';";}
+			break;
+		case "aitta9":
+		$query="SELECT varaus FROM aitta WHERE nimi='aitta8'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'aitta9';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'aitta9';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'aitta9';";}
+			break;
+
 		default:
 			$query = "SELECT * FROM `nyt`";
 			break;
