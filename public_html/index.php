@@ -93,9 +93,9 @@ $row = mysqli_fetch_array($result);
 		//nämä tekee sen alas veto valikon
 	$query = "SELECT * FROM `nyt`";
 	$result = mysqli_query($conn,$query);
-		echo "<select>";
+		echo "<select name='valinta'>";
         while ($row = mysqli_fetch_array($result)) {
-        echo "<option value='".$row["nimi"]."' name='valinta'>".$row["nimi"]."</option>";}
+        echo "<option value='".$row["nimi"]."'>".$row["nimi"]."</option>";}
 		echo "</select><input type='submit' value='Run me now!'></input></form>"
 	?>
 	</div>
