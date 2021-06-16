@@ -29,13 +29,13 @@ $row = mysqli_fetch_array($result);
 
 <form id= "form">
   <label for="fname">Nimi<br>
-  <input type="text" value size = 35></input></label><br>
+  <input type="text" value size = "35"></input></label><br>
   <label for="fname">Sähköposti<br>
-  <input type="text" value size = 35></input></label><br>
+  <input type="text" value size = "35"></input></label><br>
   <label>Puhelinnumero<br>
-  <input type="text" value size = 35></input></label><br>
+  <input type="text" value size = "35"></input></label><br>
   <label>Muuta<br>
-  <input id="other" type="text" value size = 35></input></label><br>
+  <input id="other" type="text" value size = "35" rows="20"></input></label><br>
   
 </form>
 <form action="vara.php" method="get">
