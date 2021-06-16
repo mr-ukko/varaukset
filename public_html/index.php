@@ -5,6 +5,14 @@ $result = mysqli_query($conn,$query);
 $row = mysqli_fetch_array($result); 
  ?>
 <html>
+
+<head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
 <link href="StyleSheet.css" rel="stylesheet">
 
 
@@ -13,7 +21,29 @@ $row = mysqli_fetch_array($result);
 <body>
 
 <div>
+
+<div id="position">
+<h1>Varaa paikka täyttämällä lomake</h1>
+<h4>Vasemmalla olevasta kuvasta näet tämän hetken vapaat, varatut ja paikat, jotka on varattu, sekä maksettu. Pelkästään varatut paikat voi vielä avautua, mutta maksetut paikat ovat lopullisesti varattu.
+<br>Täytä  alla oleva lomake varausta varten.</h4>
+
+<form id= "form">
+  <label for="fname">Nimi</label><br>
+  <input type="text" value size = 35></input><br>
+  <label for="fname">Sähköposti</label><br>
+  <input type="text" value size = 35></input><br>
+  <label for="fname">Puhelinnumero<br>
+  <input type="text" value size = 35></input></label><br>
+  <label for="fname" >Muuta<br>
+  <input id="other" type="text" value size = 35></input></label><br>
+  
+</form>
+</div>
+
 <div class="edgebox">
+
+	<h3 id ="guide"> <span id="green">Vihreä</span> <span id="black">=</span> Vapaa <br> <span id="yellow">Keltainen</span> 
+	<span id="black">=</span> Varattu <br> <span id="red">Punainen</span> <span id="black">=</span> Varattu ja maksettu</h3>
 
 	<div class="grid">
 	<p id = "title1">AITAT</p>
