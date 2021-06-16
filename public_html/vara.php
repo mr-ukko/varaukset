@@ -1,6 +1,7 @@
 <?php
 echo $_POST["email"]; 
-sleep(5);
+sleep(5);?>
+<?php
 	$conn = mysqli_connect('localhost','root','root','varaukset'); 
 	switch ( $_GET["value"]) 
 		{
