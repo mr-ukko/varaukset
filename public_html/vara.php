@@ -51,5 +51,5 @@ sleep(5);?>
 		}
 
     $result_insert = mysqli_query($conn,$query);
-    header("Refresh:0; url=index.php");
+    header("Refresh:10; url=index.php");
 ?>
