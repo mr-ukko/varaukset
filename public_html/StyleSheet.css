@@ -171,11 +171,12 @@
  }
  form{
  padding-top: 20px;
+ flex-direction: column;
 }
  label{
  color: #3C1874;
  font-size: 17px;
- margin-bottom: 20rem;
+ margin-bottom: 20px;
  }
 
  #position{
