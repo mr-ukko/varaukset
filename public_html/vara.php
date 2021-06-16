@@ -3,7 +3,7 @@ echo $_POST["valinta"];
 	$conn = mysqli_connect('localhost','root','root','varaukset'); 
 	switch ( $_POST["valinta"]) 
 		{
-		case "aitta1":
+		case "Aitta1":
 		$query="SELECT varaus FROM aitta WHERE nimi='aitta01'";
 		$result = mysqli_query($conn,$query);
 		$row = mysqli_fetch_array($result);
