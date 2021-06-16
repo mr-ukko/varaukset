@@ -36,7 +36,6 @@ $row = mysqli_fetch_array($result);
   <input id="other"type="text" value size = "35"></input></label><br>
   <label id="lab">Muuta<br></br>
   <textarea id="other" type="text" value size = "35" rows="20"></textarea></label><br>
-  
 </form>
 <form action="vara.php" method="get">
 <?php
