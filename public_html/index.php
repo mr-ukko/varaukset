@@ -88,14 +88,14 @@ $row = mysqli_fetch_array($result);
 		</div>
 	</div>
 </div>
-<form action="vara.php" method="post">
+<form action="vara.php" method="gett">
 <?php
 		//nämä tekee sen alas veto valikon
 	$query = "SELECT * FROM `nyt`";
 	$result = mysqli_query($conn,$query);
 		echo "<select>";
         while ($row = mysqli_fetch_array($result)) {
-        echo "<option value='".$row["nimi"]."' name='valinta' >".$row["nimi"]."</option>";}
+        echo "<option value='".$row["nimi"]."' name='valinta' type='text'>".$row["nimi"]."</option>";}
 		echo "</select><input type='submit' value='Run me now!'></input></form>"
 	?>
 	</div>
