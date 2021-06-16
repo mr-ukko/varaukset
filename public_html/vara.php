@@ -1,7 +1,7 @@
 <?php
-echo $_POST["name"]; 
+echo $_POST["valinta"]; 
 	$conn = mysqli_connect('localhost','root','root','varaukset'); 
-	switch ( $_POST["value"]) 
+	switch ( $_POST["valinta"]) 
 		{
 		case "aitta1":
 		$query="SELECT varaus FROM aitta WHERE nimi='aitta01'";
