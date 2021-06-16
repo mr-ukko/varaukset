@@ -35,7 +35,7 @@ $row = mysqli_fetch_array($result);
   <label>Puhelinnumero<br>
   <input type="text" value size = "35"></input></label><br>
   <label>Muuta<br>
-  <input id="other" type="text" value size = "35" rows="20"></input></label><br>
+  <textarea id="other" type="text" value size = "35" rows="20"></textarea></label><br>
   
 </form>
 <form action="vara.php" method="get">
