@@ -28,13 +28,13 @@ $row = mysqli_fetch_array($result);
 <br>Täytä  alla oleva lomake varausta varten.</h4>
 
 <form id= "form">
-  <label for="fname">Nimi<br>
+  <label id="lab">Nimi<br>
   <input id="other" type="text" value size = "35"></input></label><br>
-  <label for="fname">Sähköposti<br>
+  <label id="lab">Sähköposti<br>
   <input id="other" type="text" value size = "35"></input></label><br>
-  <label>Puhelinnumero<br>
+  <label id="lab">Puhelinnumero<br>
   <input id="other"type="text" value size = "35"></input></label><br>
-  <label>Muuta<br>
+  <label id="lab">Muuta<br>
   <textarea id="other" type="text" value size = "35" rows="20"></textarea></label><br>
   
 </form>
