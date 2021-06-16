@@ -88,7 +88,7 @@ $row = mysqli_fetch_array($result);
 		</div>
 	</div>
 </div>
-<form action="vara.php" method="get">
+<form action="vara.php" method="post">
 <?php
 		//nämä tekee sen alas veto valikon
 	$query = "SELECT * FROM `nyt`";
