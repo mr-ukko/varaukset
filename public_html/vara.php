@@ -1,5 +1,5 @@
 <?php
-echo $_POST["value"]; 
+echo $_POST["valinta"]; 
 	$conn = mysqli_connect('localhost','root','root','varaukset'); 
 	switch ( $_POST["value"]) 
 		{
