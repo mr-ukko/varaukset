@@ -12,7 +12,7 @@ $row = mysqli_fetch_array($result);
   
 <body>
 
-
+<div>
 <div class="edgebox">
 
 	<div class="grid">
@@ -98,6 +98,7 @@ $row = mysqli_fetch_array($result);
         echo "<option value='".$row["nimi"]."' >".$row["nimi"]."</option>";}
 		echo "</select><input type='submit' value='Run me now!'></input></form>"
 	?>
+	</div>
 </body>
   
 </html>
