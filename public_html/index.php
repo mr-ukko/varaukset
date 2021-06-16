@@ -32,8 +32,8 @@ $row = mysqli_fetch_array($result);
   <input type="text" value size = 35></input><br>
   <label for="fname">Sähköposti</label><br>
   <input type="text" value size = 35></input><br>
-  <label>Puhelinnumero
-  <input type="text" value size = 35></input></label><br>
+  <label>Puhelinnumero</label>
+  <input type="text" value size = 35></input><br>
   <label>Muuta
   <input id="other" type="text" value size = 35></input></label><br>
   
