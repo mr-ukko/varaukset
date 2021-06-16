@@ -106,6 +106,64 @@
 		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'aitta14';";}
 		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'aitta14';";}
 			break;
+		case "tettapaikka1":
+		$query="SELECT varaus FROM telttapaikatiso WHERE nimi='paikka01'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'paikka01';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'paikka01';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'paikka01';";}
+			break;
+		case "tettapaikka2":
+		$query="SELECT varaus FROM telttapaikatiso WHERE nimi='paikka02'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'paikka02';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'paikka02';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'paikka02';";}
+			break;
+		case "tettapaikka3":
+		$query="SELECT varaus FROM telttapaikatiso WHERE nimi='paikka03'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'paikka03';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'paikka03';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'paikka03';";}
+			break;
+			case "tettapaikka4":
+		$query="SELECT varaus FROM telttapaikatiso WHERE nimi='paikka04'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'paikka04';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'paikka04';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'paikka04';";}
+			break;
+			case "tettapaikka5":
+		$query="SELECT varaus FROM telttapaikatiso WHERE nimi='paikka05'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'paikka05';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'paikka05';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'paikka05';";}
+			break;
+			case "tettapaikka6":
+		$query="SELECT varaus FROM telttapaikatiso WHERE nimi='paikka06'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'paikka06';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'paikka06';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'paikka06';";}
+			break;
+
+			case "tettapaikka7":
+		$query="SELECT varaus FROM telttapaikatiso WHERE nimi='paikka07'";
+		$result = mysqli_query($conn,$query);
+		$row = mysqli_fetch_array($result);
+		if ($row["varaus"]==1) {$query ="UPDATE aitta SET varaus = '2' WHERE nimi = 'paikka07';";}
+		if ($row["varaus"]==2) {$query ="UPDATE aitta SET varaus = '3' WHERE nimi = 'paikka07';";}
+		if ($row["varaus"]==3) {$query ="UPDATE aitta SET varaus = '1' WHERE nimi = 'paikka07';";}
+			break;
+
 		default:
 			$query = "SELECT * FROM `nyt`";
 			break;
