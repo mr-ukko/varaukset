@@ -170,6 +170,7 @@
  color: black;
  }
  form{
+ flex-direction: column;
  padding-top: 20px;
 }
  label{
