@@ -45,7 +45,7 @@ $row = mysqli_fetch_array($result);
 		echo "<select name='valinta'>";
         while ($row = mysqli_fetch_array($result)) {
         echo "<option value='".$row["nimi"]."'>".$row["nimi"]."</option>";}
-		echo "</select><input type='submit' value='Run me now!'></input></form>"
+		echo "</select><input type='submit' value='varaa'></input></form>";
 	?>
 </div>
 
